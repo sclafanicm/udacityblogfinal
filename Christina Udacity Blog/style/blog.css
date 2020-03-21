@@ -1,0 +1,82 @@
+
+
+@import "footer.css";
+@import "header.css";
+
+.con {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    justify-content: center;
+    grid-template-rows: repeat(3, 1fr); 
+     grid-template-areas: 
+                  ". h h h . m"
+                  ". h h h . s"
+                  ". h h h . s";               
+}
+
+
+.s1 {
+    grid-area: h;
+}
+
+.s1 img {
+    width: 550px;
+    height: 350px;
+}
+
+
+.s2 {
+    grid-area: m;
+}
+
+.s3 {
+    grid-area: s;   
+}
+
+.s3 img {
+    width: 200px;
+    height: 200px;
+}
+
+img:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+#italic-note {
+    font-style: italic;
+}
+
+#bold-note {
+    font-weight: bold;
+}
+
+#underline-note {
+    text-decoration: underline;
+}
+
+@media (min-width:1100px) {
+    .con {
+        grid-template-columns: repeat(6, 1fr);
+        justify-content: center;
+        grid-template-rows: repeat(3, 1fr); 
+        margin-left: 20px;
+        padding-right: 50px;
+        grid-template-areas: 
+                      ". h h h . m"
+                      ". h h h . s"
+                      ". h h h . s";
+    }
+}
+
+@media (max-width:700px) {
+    .con {
+        width: min-content;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas:
+                 "h h"
+                 "m m"
+                 "s s";
+    }
+} 
+

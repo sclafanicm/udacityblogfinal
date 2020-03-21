@@ -1,0 +1,93 @@
+/*font-family: 'Playfair Display', serif;
+font-family: 'EB Garamond', serif;*/
+
+
+@import "footer.css";
+@import "body.css";
+@import "header.css";
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr) auto;
+  justify-content: center;
+  grid-gap: 20px;
+  grid-template-areas:
+      "a b c"
+      "d e f"
+      "g h i"; 
+}
+  
+img {
+  width: 100%;
+  align-content: center; 
+
+}
+img:hover {
+  opacity: 0.5;
+  
+}
+
+.sec1 { 
+  grid-area: a;
+ 
+}
+
+.sec2 {
+    grid-area: b;
+}
+
+.sec3 {
+    grid-area: c;
+}
+
+.sec4 {
+    grid-area: d;
+}
+
+.sec5 {
+    grid-area: e;
+}
+
+.sec6 {
+    grid-area: f;
+}
+
+.sec7 {
+    grid-area: g;
+}
+
+.sec8 {
+    grid-area: h;
+}
+
+.sec9 {
+  grid-area: i;
+}
+
+
+@media (max-width:700px) {
+    .container {
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: (6, 200px);
+    grid-template-areas: 
+    "a b"
+    "c d"
+    "e f"
+    "g h"
+    "i .";
+  }
+}
+
+@media (min-width:1100px) {
+  .container {
+    grid-template-columns: 300px 300px 300px;
+      grid-template-rows: repeat(3, 1fr) auto;
+      grid-gap: 20px;
+      grid-template-areas:
+          "a b c"
+          "d e f"
+          "g h i";
+  }
+}
+

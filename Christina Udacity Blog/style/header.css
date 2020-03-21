@@ -1,0 +1,47 @@
+
+
+
+.navbar {
+    display: flex;
+    height: 50px;
+    text-align: center;
+    list-style: none;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: #000000;
+ 
+}
+
+
+
+a:hover {
+    color:cadetblue; 
+}
+
+a:visited {
+    color: darkmagenta; 
+}
+
+
+
+li a {
+    text-decoration: none;
+    padding: 10px;
+    color: whitesmoke;
+    
+}
+
+.content-info {
+    text-align: center;
+    text-decoration: none;
+    color:darkgray;
+
+    }
+
+
+.header {
+    text-align: center;
+    color:#13070c; 
+    text-decoration: none;
+
+}
